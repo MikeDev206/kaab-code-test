@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    
+    background-image: url("../assets/images/bg-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.form-container {
+    position: relative;
+    background: rgba(0, 0, 0, .6);
+    width: 100%;
+    max-width: 500px;
+    margin: 48px auto;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.form-container .toggle {
+    border-radius: 5px;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 25px;
+    text-align: center;
+    background: #ff851b;
+    transition: all .8s ease;
+    cursor: pointer;
+}
+
+.form-container .toggle:hover {
+    background: #0075d9;
+    font-weight: bolder;
+}
+
+
+.form-container .toggle span {
+    letter-spacing: 1px;
+}
+
+.form-container h2 {
+    margin: 0 0 28px 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"],
+.form-container input[type="email"] {
+   background: rgba(0, 0, 0, .5);
+   outline: none;
+   display: block;
+   width: 100%;
+   padding: 10px 15px;
+   color: #333333;
+   border: none;
+   border-radius: 2px;
+   border-bottom: 4px solid #008080;
+   font-family: 'Roboto', sans-serif;
+   font-size: 14px;
+   font-weight: normal;
+   margin: 0 0 10px 0; 
+   transition: all .5s ease;
+}
+
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus,
+.form-container input[type="email"]:focus {
+    border-bottom: 4px solid #6a5acd;
+}
+
+.form-container input[type="submit"] {
+    background: #ff851b;
+    color: #ffffff;
+    border: none;
+    width: 100%;
+    padding: 10px 0;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .8s ease;
+    border-radius: 5px;
+}
+
+.form-container input[type="submit"]:hover {
+    background: #0075d9;
+    font-weight: bolder;
+}
