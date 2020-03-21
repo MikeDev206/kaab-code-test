@@ -67,7 +67,7 @@ body{
    display: block;
    width: 100%;
    padding: 10px 15px;
-   color: #333333;
+   color: #ffffff;
    border: none;
    border-radius: 2px;
    border-bottom: 4px solid #008080;
@@ -109,7 +109,6 @@ body{
     width: 100%;
     padding: 15px 0;
     text-align: center;
-    /* margin-top: 10px; */
     border-radius: 5px;
 }
 

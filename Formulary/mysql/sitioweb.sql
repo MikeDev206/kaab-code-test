@@ -1,0 +1,6 @@
+USE SitioWeb;
+CREATE TABLE USUARIO
+(
+    ID_USUARIO INT(11),
+    
+)
