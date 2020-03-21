@@ -23,7 +23,7 @@ body{
     margin: 48px auto;
     color: #ffffff;
     border-radius: 10px;
-    padding: 40px;
+    /* padding: 40px; */
 }
 
 .form-container .toggle {
@@ -81,7 +81,7 @@ body{
 .form-container input[type="text"]:focus,
 .form-container input[type="password"]:focus,
 .form-container input[type="email"]:focus {
-    border-bottom: 4px solid #6a5acd;
+    border-bottom: 4px solid #9fd5d1;
 }
 
 .form-container input[type="submit"] {
@@ -102,4 +102,28 @@ body{
 .form-container input[type="submit"]:hover {
     background: #0075d9;
     font-weight: bolder;
+}
+
+.form-container .reset-passwd {
+    background: rgba(0, 117, 217, .7);
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    /* margin-top: 10px; */
+    border-radius: 5px;
+}
+
+.form-container .reset-passwd a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.form-container .form {
+    padding: 40px;
+    display: none;
+}
+
+.form-container .form:nth-child(2){
+    display: block;
 }
