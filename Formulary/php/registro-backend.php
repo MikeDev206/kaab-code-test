@@ -1,25 +1,36 @@
 <?php
- 
-print_r($_POST);
 
 $servidor = "localhost";
-$nombre = $_POST["nombre"];
-$telefono = $_POST["telefono"];
-$correo_electronico = $_POST["correo-electronico"];
-$password = $_POST["password"]
-$baseDeDatos = $_POST["sitioweb"];
+$usuario = "root";
+$clave = "";
+$db = "sitioweb";
 
-$conexion = new mysqli($servidor,$nombre,$telefono,$correo_electronico,$password);
+$enlace = mysqli_connect($servidor, $usuario, $clave, $db);
 
-if($conexion->connect_error){
-    die("Conexión fallida: " . $conexion->connect_error)
+if(!$enlace){
+    echo "Error en la conexión con el server a la base de datos";
 }
-    
 
-if(isset($_POST['text'])) {
-    $text = $_POST['text'];
-    
-    $sql = "INSERT INTO "
+if(isset($_POST['registrarse'])) {
+    $nombre = $_POST["nombre"];
+    $telefono = $_POST["telefono"];
+    $correo_electronico = $_POST["correo_electronico"];
+    $password = $_POST["password"];
+    //$id = rand(1,99);
+
+    $insertData = "INSERT INTO USUARIO VALUES(
+        '$nombre',
+        '$telefono',
+        '$correo_electronico',
+        '$password'
+        )";
+
+    $executeInsert = mysqli_query($enlace, $insertData);    
+
+    if(!$executeInsert){
+        echo "Error en la línea de sql";
+    }
 }
+
 
 ?>
